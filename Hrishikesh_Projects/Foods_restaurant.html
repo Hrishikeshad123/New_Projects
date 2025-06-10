@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1 {
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+        font-family: 'Lato', sans-serif;
+        }
+        .top-banner{
+            width: 100%;
+            background-image: url(Food_Images/bg-1.jpg);
+            background-size: cover;
+            padding: 16.875rem 0 9.375;
+        }
+        .nav-link{
+            font-size: 0.9375rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--primary-color);
+            letter-spacing: 0.5px;
+        }
+        .reviews-section .carousel-item{
+            margin-top: 3rem;
+            padding: 10rem 3.125rem;
+            background-color: var(--white-color);
+            border-radius: 0.9375rem;
+            text-align: center;
+        }
+
+        .reviews-section .carousel-caption img{
+            max-width: 5rem;
+            border-radius: 50%;
+            pad: 0.3125rem;
+        }
+        .reviews-section .carousel-item .carousel-caption p{
+            font-size: 1.3125rem;
+            line-height: 2.0625rem;
+            padding: 0 11% 0.625rem;
+        }
+
+        .card{
+            border: none;
+            background-color: transparent;
+            border-radius: 0.9375rem;
+        }
+
+        .card img{
+            border-radius: 0.9375rem;
+            object-fit: cover;
+        }
+        .card span{
+            /* display: block; */
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            /* padding-bottom: 1rem; */
+            border-bottom: 0.0625rem solid #eee;
+        }
+        .card span del{
+            color: var(--text-grey);
+            margin-left: 0.5rem;
+        }
+
+       @media (max-width:480px) {
+            #mynavbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                flex-wrap: wrap;
+            }
+
+            #abtus{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+             
+                margin-top: 0;
+                /* font-size: 20px; */
+            }
+           
+       } 
+
+        /* @media (max-width:991px) {
+            .text-content{
+                width: 100%;
+            }
+            .navigation-wrap .navbar-brand img{
+                height: 3.8125rem;
+            }
+            .navigation-wrap{
+                text-align: center;
+                background-color: var(--white-color);
+            }
+            .navigation-wrap .nav-link{
+                line-height: 1.875rem;
+            }
+            .top-banner{
+                padding: 9.375rem 0 9.375rem;
+            }
+            .reviews-section .carousel-item .carousel-caption p{
+                padding: 0;
+            }
+        }
+
+        @media (max-width:767px) {
+            h1{
+                font-size: 2.8rem;
+            }
+            h2{
+                font-size: 2rem;
+                line-height: 2.0625rem;
+            }
+
+            .top-banner{
+                padding: 10.875rem 0 9.375rem;
+            }
+
+            .story-section{
+                height: auto;
+                padding: 3rem 0;
+            }
+
+            .reviews-section .carousel-item .carousel-caption p{
+                padding: 11rem 3.125rem;
+            }
+        }
+
+        @media (max-width:330px) {
+            .reviews-section .carousel-item .carousel-caption p{
+                padding: 13rem 3.125rem;
+            }
+        } */
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+        <header style="height: 0px;">
+            <nav class="navbar bg-dark navbar-light sticky-top px-2" id="mynavbar">
+                <a href="#" class="navbar-brand">
+                    <img src="/Food_Images/logo.jpg" alt="logo" width="60">
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exploreFoods">Explore Foods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Reviews">Reviews</a></li>
+                   <li class="nav-item"><button type="button" class="btn btn-outline-success">9665732137</button></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="home">
+            <div class="container-fluid px-0 top-banner">
+                <div class="container">
+                    <div class="row justify-content-start align-items-center"  style="min-height: 100vh;" >
+                        <div class="col-lg-5 col-md-6">
+                            <h1>Good Food Choices Are Good Investments.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, explicabo?</p>
+                            <div class="mt-4">
+                                <button class="btn btn-outline-danger">Order Now <i class="bi bi-basket"></i></button>
+                                <button class="btn btn-outline-success ms-lg-4 mt-lg-0">Add To Cart<i class="bi bi-cart-check-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutus">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="container justify-content-center align-items-center d-flex" style="min-height: 100vh;">
+                    <div class="row row-cols-2" id="abtus">
+                        <div class="col-lg-5">
+                            <img src="/Food_Images/img-1.png" alt="aboutuspic" class="img-float w-100 rounded-5">
+                        </div>
+                        <div class="col py-5">
+                            <h1>We Pride OurSelves On Making Real Food From The Best Ingredients.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum quasi sed dolorem quos incidunt minima deleniti delectus neque porro.</p>
+                            <a href="#aboutus2"><button type="button" class="btn btn-outline-danger">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutus2">
+            <div class="container-fluid">
+                <div class="container py-5" style="min-height: 100vh;">
+                    <div class="row row-cols-2  justify-content-center align-items-center d-flex">
+                        <div class="col col-lg-5 col-md-6">
+                            <h1>We Make Everything By Hand With The Best Possible Ingredients.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, numquam! Reiciendis nam libero ipsa nihil omnis expedita quo quasi illum minima, nobis veritatis fuga atque, error modi possimus facere at.</p>
+                            <span><i class="bi bi-check"></i> Lorem ipsum dolor sit amet.</span>
+                            <span><i class="bi bi-check"></i> Lorem ipsum dolor sit amet.</span>
+                            <a href="#exploreFoods"><button class="btn btn-outline-success mt-2">Explore Our Food!</button></a>
+                        </div>
+                        <div class="col">
+                            <img src="/Food_Images/img-2.png" alt="" class="img-float w-100 rounded-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exploreFoods">
+            <div class="container-fluid" style="min-height: 100vh;">
+                <div class="container" style="text-align: center;">
+                    <h1>Explore Our Foods</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam error veritatis unde nostrum sequi dolore saepe ducimus quaerat, qui aperiam, tempora voluptas reprehenderit nulla. Amet laudantium ullam unde incidunt possimus ad vel, repellat nisi fuga aliquid eveniet nobis ipsam id tenetur quisquam quidem, optio explicabo fugiat illum dolore velit obcaecati perspiciatis aut. Placeat dignissimos reprehenderit tempore consequuntur amet dolorum ex.</p>
+                </div>
+
+                <div class="row row-cols-3">
+                    <div class="col">
+                         <div class="card">
+                            <div class="card-body">
+                                    <img src="/Food_Images/img-3.jpg" alt="sandwitch" class="img-float w-100 rounded-5">
+                                    </div>
+                                    <div class="card-footer">
+                                    <h6>Vegetable Sandwich</h6>
+                                    <p>Time: 15 - 20 Minutes | Serves:1</p>
+                                    <span class="text-danger"><strong>$10.50</strong></span>
+                                    <span class="text-secondary"><strong><del>$11.70</del></strong></span>
+                                    <button type="button" class="btn btn-outline-danger px-1 my-2 ms-3">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                         <div class="card">
+                            <div class="card-body">
+                                    <img src="/Food_Images/img-4.jpg" alt="sandwitch" class="img-float w-100 rounded-5">
+                                    </div>
+                                    <div class="card-footer">
+                                    <h6>Vegetarian Burger</h6>
+                                    <p>Time: 30 - 45 Minutes | Serves:1</p>
+                                    <span class="text-danger"><strong>$9.20</strong></span>
+                                    <span class="text-secondary"><strong><del>$10.50</del></strong></span>
+                                    <button type="button" class="btn btn-outline-danger px-1 my-2 ms-3">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                         <div class="card">
+                            <div class="card-body">
+                                    <img src="/Food_Images/img-5.jpg" alt="sandwitch" class="img-float w-100 rounded-5">
+                                    </div>
+                                    <div class="card-footer">
+                                    <h6>Raspberry Stuffed French Toast</h6>
+                                    <p>Time: 10 - 15 Minutes | Serves:1</p>
+                                    <span class="text-danger"><strong>$12.50</strong></span>
+                                    <span class="text-secondary"><strong><del>$13.20</del></strong></span>
+                                    <button type="button" class="btn btn-outline-danger px-1 my-2 ms-3">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="Reviews" style="min-height: 100vh;">
+        <div class="wrapper reviews-section">
+            <div class="container text-center">
+                <div class="text-center pb-4">
+                    <h2>Testimonial</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div class="carousel-slide bg-danger" id="carouselExampleDark" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <img src="/Food_Images/review-1.jpg" alt="review1">
+                                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum fuga recusandae porro aliquam repudiandae atque ipsum magnam expedita itaque ipsam."</p>
+                                        <h5 class="text-info">Johnthan Doe - UX Designer</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="/Food_Images/review-2.jpg" alt="review2">
+                                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum fuga recusandae porro aliquam repudiandae atque ipsum magnam expedita itaque ipsam."</p>
+                                        <h5 class="text-info">Maccy Doe - Front End</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
